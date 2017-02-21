@@ -6,7 +6,7 @@ Running this microservice you won't need a backend solely to get some meta infor
 
 ## Deployment
 
-Your wn `micro-open-graph` is one click away:
+Your own `micro-open-graph` is one click away:
 
 [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/mxstbr/micro-open-graph)
 
