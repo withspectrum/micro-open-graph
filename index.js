@@ -3,7 +3,7 @@ const { send } = require('micro')
 const scraper = require('open-graph-scraper')
 const cache = require('memory-cache')
 
-const TWENTY_FOUR_HOURS = 86400000;
+const TWENTY_FOUR_HOURS = 86400000
 
 module.exports = async (req, res) => {
   const { query: { url } } = parse(req.url, true)
