@@ -21,32 +21,24 @@ now mxstbr/micro-open-graph
 To get the data for a given URL, for example `mxstbr.blog`, simply add that URL (safely escaped) to the `url` query parameter:
 
 ```sh
-https://your-url.now.sh/?url=mxstbr.blog
+https://your-url.now.sh/?url=http://mxstbr.blog
 ```
 
 And you will get the parsed data in the following format:
 
 ```JSON
 {
-	"data": {
-		"ogSiteName":"<mxstbr/>",
-		"ogTitle":"<mxstbr/>",
-		"ogType":"website",
-		"ogDescription":"Fresh thinking and expert tips about HTML, CSS, JavaScript and other web technologies.",
-		"ogUrl":"http://mxstbr.blog/",
-		"twitterCard":"summary",
-		"twitterSite":"@mxstbr",
-		"ogImage":[{
-			"url":"http://mxstbr.blog/social_media.png",
-			"width":null,
-			"height":null,
-			"type":null
-		}]
-	}
+	"author": null,
+	"date": "2017-02-16T11:00:00.000Z",
+	"description": "Fresh thinking and expert tips about HTML, CSS, JavaScript and other web technologies.",
+	"image": "http://mxstbr.blog/social_media.png",
+	"publisher": "<mxstbr/>",
+	"title": "<mxstbr/>",
+	"url": "http://mxstbr.blog/"
 }
 ```
 
-> Note: Not all of this, or even more, data might be available depending on the `meta` tags the page has in its HTML. See [`open-graph-scraper`](https://github.com/jshemas/openGraphScraper/blob/master/app.js) for a full list of supported tags.
+> Note: Not all of this, or even more, data might be available depending on the `meta` tags the page has in its HTML. (see [`metascraper`](https://github.com/ianstormtaylor/metascraper/tree/master/lib/rules) for the full list of supported properties)
 
 We infer the data from more places than just the open graph meta tags, we also support twitter meta tags and fallback to standard HTML tags like e.g. the `title` tag if no open graph data was specified. Results are cached in memory for 24 hours, which means calling this with the same URL repeatedly won't have a large impact on your server!
 

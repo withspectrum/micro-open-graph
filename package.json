@@ -21,13 +21,11 @@
   "dependencies": {
     "memory-cache": "^0.1.6",
     "micro": "^7.0.6",
-    "open-graph-scraper": "^2.4.2"
+    "open-graph-scraper": "^2.4.2",
+    "metascraper": "^1.0.6"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
     "standard": "^8.6.0"
-  },
-  "engines": {
-    "node": "6.x"
   }
 }
