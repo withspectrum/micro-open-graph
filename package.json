@@ -1,0 +1,33 @@
+{
+  "name": "micro-open-graph",
+  "version": "1.0.0",
+  "description": "A tiny Node.js microservice to scrape open graph data with joy.",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "dev": "nodemon --exec \"npm start\" -e \"js\"",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxstbr/micro-open-graph.git"
+  },
+  "author": "Max Stoiber <contact@mxstbr.com> (http://mxstbr.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mxstbr/micro-open-graph/issues"
+  },
+  "homepage": "https://github.com/mxstbr/micro-open-graph#readme",
+  "dependencies": {
+    "memory-cache": "^0.1.6",
+    "micro": "^6.2.1",
+    "open-graph-scraper": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "standard": "^8.6.0"
+  },
+  "engines": {
+    "node": "6.x"
+  }
+}
