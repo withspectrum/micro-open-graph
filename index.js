@@ -23,7 +23,6 @@ module.exports = async (req, res) => {
     }
 
     send(res, statusCode, data)
-    // Cache results for 24 hours
     cache.put(url, data, TWENTY_FOUR_HOURS)
   })
 }
