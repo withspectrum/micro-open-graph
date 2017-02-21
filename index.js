@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
   const cachedResult = cache.get(url)
   if (cachedResult) return send(res, 200, cachedResult)
 
-  scraper({ url, allMedia: true }, function (err, results) {
+  scraper({ url, allMedia: true }, (err, results) => {
     let statusCode, data
     if (err || !results.success) {
       statusCode = 401
