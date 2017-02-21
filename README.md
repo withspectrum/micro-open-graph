@@ -48,7 +48,7 @@ And you will get the parsed data in the following format:
 
 > Note: Not all of this, or even more, data might be available depending on the `meta` tags the page has in its HTML. See [`open-graph-scraper`](https://github.com/jshemas/openGraphScraper/blob/master/app.js) for a full list of supported tags.
 
-We infer the data from more places than just the open graph meta tags, we also support twitter meta tags and fallback to standard HTML tags like e.g. the `title` tag if no open graph data was specified. Successful results are cached for 24 hours, which means calling this with the same URL repeatedly won't have a large impact on your server!
+We infer the data from more places than just the open graph meta tags, we also support twitter meta tags and fallback to standard HTML tags like e.g. the `title` tag if no open graph data was specified. Results are cached in memory for 24 hours, which means calling this with the same URL repeatedly won't have a large impact on your server!
 
 ## Development
 

@@ -13,10 +13,17 @@ module.exports = async (req, res) => {
   if (cachedResult) return send(res, 200, cachedResult)
 
   scraper({ url, allMedia: true }, function (err, results) {
-    if (err || !results.success) return send(res, 500, { message: 'Scraping the open graph data from the URL failed.', suggestion: 'Make sure your URL is correct and the webpage has open graph data, meta tags or twitter card data.' })
+    let statusCode, data
+    if (err || !results.success) {
+      statusCode = 401
+      data = { message: `Scraping the open graph data from "${url}" failed.`, suggestion: 'Make sure your URL is correct and the webpage has open graph data, meta tags or twitter card data.' }
+    } else {
+      statusCode = 200
+      data = results
+    }
 
-    send(res, 400, results)
+    send(res, statusCode, data)
     // Cache results for 24 hours
-    cache.put(url, results, TWENTY_FOUR_HOURS)
+    cache.put(url, data, TWENTY_FOUR_HOURS)
   })
 }
