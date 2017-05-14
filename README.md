@@ -8,12 +8,12 @@ Running this microservice you won't need a backend solely to get some meta infor
 
 Your own `micro-open-graph` is one click away:
 
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/mxstbr/micro-open-graph)
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/withspectrum/micro-open-graph)
 
 You can also deploy with a single command from the terminal (assuming you have [`now`](https://now.sh) installed):
 
 ```sh
-now mxstbr/micro-open-graph
+now withspectrum/micro-open-graph
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ We infer the data from more places than just the open graph meta tags, we also s
 ## Development
 
 ```sh
-git clone git@github.com:mxstbr/micro-open-graph.git
+git clone git@github.com:withspectrum/micro-open-graph.git
 npm run dev
 ```
 
