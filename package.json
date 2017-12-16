@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/mxstbr/micro-open-graph#readme",
   "dependencies": {
+    "got": "^8.0.1",
     "memory-cache": "^0.1.6",
-    "metascraper": "^1.0.6",
+    "metascraper": "^3.0.0",
     "micro": "^7.0.6"
   },
   "devDependencies": {

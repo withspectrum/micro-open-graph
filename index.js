@@ -1,6 +1,7 @@
 const { parse } = require('url')
 const { send } = require('micro')
-const { scrapeUrl } = require('metascraper')
+const got = require('got');
+const metascraper = require('metascraper')
 const cache = require('memory-cache')
 
 const TWENTY_FOUR_HOURS = 86400000
@@ -16,7 +17,8 @@ module.exports = async (req, res) => {
 
   let statusCode, data
   try {
-    data = await scrapeUrl(url)
+    const { body: html } = await got(url);
+    data = await metascraper({ url, html })
     statusCode = 200
   } catch (err) {
     console.log(err)
