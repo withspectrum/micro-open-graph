@@ -1,11 +1,11 @@
 {
   "name": "micro-open-graph",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A tiny Node.js microservice to scrape open graph data with joy.",
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "dev": "nodemon --exec \"npm start\" -e \"js\"",
+    "dev": "micro-dev",
     "test": "standard"
   },
   "repository": {
@@ -19,12 +19,19 @@
   },
   "homepage": "https://github.com/mxstbr/micro-open-graph#readme",
   "dependencies": {
-    "got": "^8.0.1",
+    "got": "^8.3.2",
     "memory-cache": "^0.1.6",
-    "metascraper": "^3.0.0",
-    "micro": "^7.0.6"
+    "metascraper": "^3.11.7",
+    "metascraper-amazon": "^3.11.7",
+    "metascraper-clearbit-logo": "^3.11.0",
+    "metascraper-logo-favicon": "^3.11.4",
+    "metascraper-soundcloud": "^3.11.7",
+    "metascraper-video-provider": "^3.11.7",
+    "metascraper-youtube": "^3.11.7",
+    "micro": "^9.3.2"
   },
   "devDependencies": {
+    "micro-dev": "^3.0.0",
     "nodemon": "^1.11.0",
     "standard": "^8.6.0"
   }
