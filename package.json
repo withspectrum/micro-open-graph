@@ -21,13 +21,13 @@
   "dependencies": {
     "got": "^8.3.2",
     "memory-cache": "^0.1.6",
-    "metascraper": "^3.11.7",
-    "metascraper-amazon": "^3.11.7",
-    "metascraper-clearbit-logo": "^3.11.0",
+    "metascraper": "^3.11.8",
+    "metascraper-amazon": "^3.11.8",
+    "metascraper-clearbit-logo": "^3.11.8",
     "metascraper-logo-favicon": "^3.11.4",
-    "metascraper-soundcloud": "^3.11.7",
-    "metascraper-video-provider": "^3.11.7",
-    "metascraper-youtube": "^3.11.7",
+    "metascraper-soundcloud": "^3.11.8",
+    "metascraper-video-provider": "^3.11.8",
+    "metascraper-youtube": "^3.11.8",
     "micro": "^9.3.2"
   },
   "devDependencies": {
