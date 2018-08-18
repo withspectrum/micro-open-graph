@@ -26,7 +26,7 @@
     "metascraper-clearbit-logo": "^3.11.8",
     "metascraper-logo-favicon": "^3.13.0",
     "metascraper-soundcloud": "^3.11.8",
-    "metascraper-video-provider": "^3.11.8",
+    "metascraper-video-provider": "^3.13.1",
     "metascraper-youtube": "^3.11.8",
     "micro": "^9.3.2"
   },
