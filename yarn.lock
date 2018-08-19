@@ -2215,9 +2215,9 @@ metascraper-url@^3.12.1:
   dependencies:
     "@metascraper/helpers" "^3.12.1"
 
-metascraper-video-provider@^3.13.1:
-  version "3.13.1"
-  resolved "https://registry.yarnpkg.com/metascraper-video-provider/-/metascraper-video-provider-3.13.1.tgz#1983516d8952f876acebf175116c6c369105b148"
+metascraper-video-provider@^3.13.2:
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/metascraper-video-provider/-/metascraper-video-provider-3.13.2.tgz#24c23b9be354952e866abe22dda4f59d443c5e74"
   dependencies:
     "@metascraper/helpers" "^3.12.1"
     got "~9.0.0"
