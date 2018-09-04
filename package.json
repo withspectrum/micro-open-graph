@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "micro-dev": "^3.0.0",
-    "nodemon": "^1.18.3",
+    "nodemon": "^1.18.4",
     "standard": "^8.6.0"
   }
 }
