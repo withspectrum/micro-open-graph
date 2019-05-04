@@ -28,7 +28,7 @@
     "metascraper-soundcloud": "^3.11.8",
     "metascraper-video-provider": "^3.13.2",
     "metascraper-youtube": "^3.11.8",
-    "micro": "^9.3.2"
+    "micro": "^9.3.4"
   },
   "devDependencies": {
     "micro-dev": "^3.0.0",

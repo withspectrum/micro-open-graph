@@ -133,9 +133,9 @@ arg@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/arg/-/arg-1.0.0.tgz#444d885a4e25b121640b55155ef7cd03975d6050"
 
-arg@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/arg/-/arg-2.0.0.tgz#c06e7ff69ab05b3a4a03ebe0407fac4cba657545"
+arg@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.0.tgz#583c518199419e0037abb74062c37f8519e575f0"
 
 argparse@^1.0.7:
   version "1.0.9"
@@ -388,14 +388,6 @@ chalk@2.3.0, chalk@^2.3.0:
     ansi-styles "^3.1.0"
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
-
-chalk@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.0.tgz#a060a297a6b57e15b61ca63ce84995daa0fe6e52"
-  dependencies:
-    ansi-styles "^3.2.1"
-    escape-string-regexp "^1.0.5"
-    supports-color "^5.3.0"
 
 chalk@2.4.1, chalk@^2.0.1:
   version "2.4.1"
@@ -2261,12 +2253,11 @@ micro-dev@^3.0.0:
     pretty-error "2.1.1"
     string-length "2.0.0"
 
-micro@^9.3.2:
-  version "9.3.2"
-  resolved "https://registry.yarnpkg.com/micro/-/micro-9.3.2.tgz#41e249fe96a33db056f0a5dabb32c8fd4b69c5ca"
+micro@^9.3.4:
+  version "9.3.4"
+  resolved "https://registry.yarnpkg.com/micro/-/micro-9.3.4.tgz#745a494e53c8916f64fb6a729f8cbf2a506b35ad"
   dependencies:
-    arg "2.0.0"
-    chalk "2.4.0"
+    arg "4.1.0"
     content-type "1.0.4"
     is-stream "1.1.0"
     raw-body "2.3.2"
